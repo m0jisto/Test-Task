@@ -1,0 +1,12 @@
+.list-books {
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    padding: 10px;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+}
+
+hr {
+    margin: 5px 0;
+}

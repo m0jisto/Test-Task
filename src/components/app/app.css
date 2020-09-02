@@ -1,0 +1,15 @@
+.app {
+    margin: 50px auto;
+    max-width: 880px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+}
