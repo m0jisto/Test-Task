@@ -31,9 +31,9 @@ export default class App extends Component {
     onUpdateSearchId(term) {
         if (typeof +term === 'number' && term > 0 && term < 11) {
             this.bookService.getBook(term)
-            .then(data => {
-                this.setState({book: data})
-            })
+                .then(data => {
+                    this.setState({book: data})
+                })
         } else if (term === '') {
             this.setState({book: false})
         } else if (typeof +term === 'number') {
