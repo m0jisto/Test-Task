@@ -4,15 +4,11 @@ import './search-id.css'
 export default class SearchId extends Component  {
     constructor (props) {
         super(props);
-        this.state = {
-            term: ''
-        }
         this.onUpdateSearchId = this.onUpdateSearchId.bind(this)
     }
 
     onUpdateSearchId(e){
         const term = e.target.value;
-        this.setState({term});
         this.props.onUpdateSearchId(term);
     }
 
