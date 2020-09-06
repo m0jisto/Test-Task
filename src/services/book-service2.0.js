@@ -4,6 +4,7 @@ export default class bookService {
 
     async getResource (url) {
         const res = await fetch(url);
+
         return await res.json();
     }
 
