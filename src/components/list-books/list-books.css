@@ -10,3 +10,11 @@
 hr {
     margin: 5px 0;
 }
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+}

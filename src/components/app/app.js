@@ -23,7 +23,7 @@ export default class App extends Component {
                 <SeacrhId onUpdateSearchId = {this.onUpdateSearchId}/>
 
                 <div className="container">
-                    <ListBooks /> 
+                    <ListBooks onUpdateSearchId = {this.onUpdateSearchId}/> 
                     <Book bookId={bookId}/> 
                 </div> 
             </div>

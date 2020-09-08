@@ -1,5 +1,3 @@
-import nextId from "react-id-generator";
-
 export default class bookService {
 
     async getResource (url) {
@@ -21,7 +19,7 @@ export default class bookService {
 
     _transformBook(book) {
         return {
-            id: nextId(),
+            id: book.url.replace(/[https, api, /, :, www, nofcendfrem, ., bk]/g , '') || '-',
             name: book.name,
             authors: book.authors,
             isbn: book.isbn,

@@ -18,12 +18,15 @@ export default class ListBooks extends Component {
     renderBooks () {
         let {books} = this.state
 
+        console.log(books)
+
         if (books) {
             return books.map((item) => {
                 if (typeof item === 'object') { 
                     const {id, name} = item;
                     return (
-                        <li key={id}>
+                        <li key={id}
+                            onClick={() => this.props.onUpdateSearchId(id)}>
                             {name}
                         </li>
                     )
